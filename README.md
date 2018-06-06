@@ -146,7 +146,7 @@ struct EdgeNode; // forward reference for the compiler struct GraphNode { // str
 
 struct EdgeNode { int adjGraphNode; // subscript of the adjacent graph node EdgeNode* nextEdge; };
 
-Develop the class:
+###### Develop the class
   1.	Class attributes include an array of GraphNodes among others as you see necessary.
 
 class GraphL {
@@ -156,7 +156,7 @@ public: ... private: // array of GraphNodes };
   
 NOTE: To simplify the process, you should always insert EdgeNodes at the beginning of the adjacency list for a GraphNode. Your output of the edges for each node will, thus, be in the reverse order in which they are listed in the input file (see Figure 1 (a) vs. (c)) Make sure to follow this simplification and process the edges in the order they are in the list, since it affects the depth-first ordering that you will get.
 
-List of supporting files
+##### List of supporting files
   1.	data32.txt: input data file;
   2.	all the other files as in part 1
   

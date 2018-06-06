@@ -59,7 +59,13 @@ for (int source = 1; source <= nodeSize; source++) { T[source][source].dist = 0;
     }
 } Note: in T, index 0 is not used. This is to match with the node numbering style. Also the above pseudocode is for keeping the shortest distance only, you will need to think how to record associated path info by yourself.
 
-  3.	You do not need to implement a complete Graph class. The only methods you must have are • constructor: among others that need to be initialized, the data member T is initialized to sets all dist to infinity, sets all visited to false, and sets all path to 0. • buildGraph: builds up graph node information and adjacency matrix of edges between each node reading from a data file. • insertEdge: insert an edge into graph between two given nodes • removeEdge: remove an edge between two given nodes • findShortestPath: find the shortest path between every node to every other node in the graph, i.e., TableType T is updated with shortest path information • displayAll: uses couts to demonstrate that the algorithm works properly. For the data in Figure 1, it will produce the sample output below (similar to, use the general format, but blanks do not need not be exact):
+  3. You do not need to implement a complete Graph class. The only methods you must have are 
+  * constructor: among others that need to be initialized, the data member T is initialized to sets all dist to infinity, sets all visited to false, and sets all path to 0. 
+  * buildGraph: builds up graph node information and adjacency matrix of edges between each node reading from a data file. 
+  * insertEdge: insert an edge into graph between two given nodes 
+  * removeEdge: remove an edge between two given nodes 
+  * findShortestPath: find the shortest path between every node to every other node in the graph, i.e., TableType T is updated with shortest path information 
+  * displayAll: uses couts to demonstrate that the algorithm works properly. For the data in Figure 1, it will produce the sample output below (similar to, use the general format, but blanks do not need not be exact):
   
 Description From node To node Dijkstra's Path
 

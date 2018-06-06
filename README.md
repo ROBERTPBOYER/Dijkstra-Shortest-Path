@@ -69,19 +69,35 @@ for (int source = 1; source <= nodeSize; source++) { T[source][source].dist = 0;
   
 Description From node To node Dijkstra's Path
 
-    Aurora and 85th 1 2 40 1 3 2
+    Aurora and 85th 
+    1 2 40 1 3 2
     1 3 20 1 3
-    1 4 50 1 3 2 4 1 5 30 1 5
+    1 4 50 1 3 2 4 
+    1 5 30 1 5
 
-    Green Lake Starbucks 2 1 --- 2 3 --- 2 4 10 2 4
+    Green Lake Starbucks 
+    2 1 --- 
+    2 3 --- 
+    2 4 10 2 4
     2 5 ---
 
-    Woodland Park Zoo 3 1 --- 3 2 20 3 2
-    3 4 30 3 2 4 3 5 ---
+    Woodland Park Zoo 
+    3 1 --- 
+    3 2 20 3 2
+    3 4 30 3 2 4 
+    3 5 ---
 
-    Troll under bridge 4 1 --- 4 2 --- 4 3 --- 4 5 ---
+    Troll under bridge 
+    4 1 --- 
+    4 2 --- 
+    4 3 --- 
+    4 5 ---
 
-    PCC 5 1 --- 5 2 20 5 2 5 3 --- 5 4 25 5 4
+    PCC 
+    5 1 --- 
+    5 2 20 5 2 
+    5 3 --- 
+    5 4 25 5 4
 
 • display: uses couts to display the shortest distance with path info between the fromNode to toNode. For the data in Figure 1, a call of G.display(1,4) is going to produce the following output (similar to):
 

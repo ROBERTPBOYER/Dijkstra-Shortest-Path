@@ -32,9 +32,9 @@ Sample Input picture (not part of data)
            
 Figure 1. (a) Part of the data in the provided data31.txt; (b) a graph drawn based on data in (a)
 
-Develop the class:
+###### Develop the class
 
-  1.	Class attributes include an array of NodeData (nodedata.h and nodedata.cpp will be given), the adjacency matrix, number of nodes, and TableType array.
+  1. Class attributes include an array of NodeData (nodedata.h and nodedata.cpp will be given), the adjacency matrix, number of nodes, and TableType array.
   
 class GraphM {
 public: ... private: NodeData data[MAXNODES_M]; // data for graph nodes int C[MAXNODES_M][MAXNODES_M]; // Cost array, the adjacency matrix int size; // number of nodes in the graph TableType T[MAXNODES_M][MAXNODES_M]; // stores visited, distance, path };
@@ -45,7 +45,7 @@ struct TableType { bool visited; // whether node has been visited int dist; // s
 
 T is a 2-dimensional array of structs because we want to work on from all nodes to all other nodes.
 
-  2.	The pseudocode given in class is for only one source node (node 1 was used). To allow for checking all nodes to all other nodes, use the following pseudo code as the basis for your implementation.
+  2. The pseudocode given in class is for only one source node (node 1 was used). To allow for checking all nodes to all other nodes, use the following pseudo code as the basis for your implementation.
   
 for (int source = 1; source <= nodeSize; source++) { T[source][source].dist = 0;
 

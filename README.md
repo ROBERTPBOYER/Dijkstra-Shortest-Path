@@ -4,9 +4,8 @@ UW CSS 343 Data Structures, Algorithms, And Discrete Mathematics II
 
 ### Description
 
-##### Part 1 
-
-Programming (Dijkstra's shortest path algorithm) This project is to implement Dijkstra's shortest path algorithm. Your code should be able to read a data file consisting of many lines (an example file called data31.txt will be given, explained below) and will be able to find the lowest cost paths (findShortestPath function) and display the cost and path from every node to every other node (displayAll function). Another display routine (display function) will output one path in detail.
+##### Part 1 Programming (Dijkstra's shortest path algorithm) 
+This project is to implement Dijkstra's shortest path algorithm. Your code should be able to read a data file consisting of many lines (an example file called data31.txt will be given, explained below) and will be able to find the lowest cost paths (findShortestPath function) and display the cost and path from every node to every other node (displayAll function). Another display routine (display function) will output one path in detail.
 
 In the input data (e.g., data31.txt), the first line tells the number of nodes, say n, followed by a text description of each of the 1 through n nodes, one description per line (50 chars max length). After that, each line consists of 3 integers representing an edge. If there is an edge from node 1 to node 2 with a label of 10, the data is: 1 2 10. If the first integer is zero, it means the end of the data for that one graph. There may be several graphs, each having at most 100 nodes. For example, Figure 1 (a) shows part of data from data31.txt (the data file you will be given) where it contains 5 nodes. For clarity, (b) shows a graph drawn based on data in (a). However, Figure 1 (b) is just for your reference. It’s not part of your input data or the output you need to produce. For this lab (including part 2,) you may assume the input data file has correctly formatted, valid data.
 
@@ -99,11 +98,11 @@ Description From node To node Dijkstra's Path
         5 3 --- 
         5 4 25 5 4
 
-• display: uses couts to display the shortest distance with path info between the fromNode to toNode. For the data in Figure 1, a call of G.display(1,4) is going to produce the following output (similar to):
+* display: uses couts to display the shortest distance with path info between the fromNode to toNode. For the data in Figure 1, a call of G.display(1,4) is going to produce the following output (similar to):
 
 1 4 50 1 3 2 4 Aurora and 85th Woodland Park Zoo Green Lake Starbucks Troll under Aurora bridge
 
-• Some utility functions may be needed.
+* Some utility functions may be needed.
 
 List of supporting files
   1.	data31.txt: input data file;
@@ -111,12 +110,11 @@ List of supporting files
   3.	lab3.cpp: containing main(), to help clarify the functional requirements; NOTE: this is used for part 2 too, so comment out things related to part 2 when you are focusing on part 1.
   4.	lab3output.txt: correct output in using lab3.cpp; NOTE: this includes results from part 2 too.
   5.	dataUWB.txt: an additional data set for part 1, no correct output will be provided.
-  
-Submission Requirements: All the rules, submission requirements, and evaluation criteria are the same as the assignment 1.
 
-#### Part 2
 
-Programming (depth-first search) This project is to display the graph information and implement depth-first (search always starts at node #1).
+#### Part 2 Programming (depth-first search) 
+
+This project is to display the graph information and implement depth-first (search always starts at node #1).
 
 Similar to Part 1, in the input data (e.g., data32.txt), the first line tells the number of nodes, say n, followed by a text description of each of the 1 through n nodes, one description per line (50 chars max length). After that, each line consists of 2 integers (instead of 3 integers in Part 1) representing an edge. If there is an edge from node 1 to node 2, the data is: 1 2. A zero for the first integer signifies the end of the data for that one graph. In the file, all the edges for the 1st node will be listed first, then all the edges for the 2nd node, etc. Take them as they come, no sorting. There may be several graphs, each having at most 100 nodes. For example, Figure 1 (a) shows part of data from data32.txt (the data file you will be given) where it contains 5 nodes. For clarity, (b) shows a graph drawn based on data in (a). However, Figure 1 (b) is just for your reference. It’s not part of your input data or the output you need to produce. Figure 1 (c) shows the sample output where the last line is produced by calling depthFirstSearch function and the rest of them are produced by displayGraph. As you may see, edges in the input are always shown in reverse order in the output (see the NOTE in the Develop the class Section for more discussion). For this lab (including part 1) you may assume the input data file has correctly formatted, valid data.
 
